@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+:root{
+  --font: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+}
+#header{
+  height: 12%;
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+#logoTextHeader{
+  max-width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vw;
+  gap: 3%;
+  margin-left: -15%;
+  font-family: var(--font);
+}
+#logo{
+  width: 40%;
+  padding: 1%;
+  border-right: 0.1vw solid #fff;
+}
+#logo a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5vw;
+  font-family: var(--font);
+}
+#logo a img{
+  border-radius: 1vh;
+  width: 20%;
+}
+#mainHeaderButtons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3%;
+  width: 30%;
+  margin-right: -15%;
+}
+#mainHeaderButtons button{
+  height: 50%;
+  border-radius: 1vh;
+  font-family: var(--font);
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 1.3vw;
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+}
+#submitButton{
+  width: 50%;
+  border: 0.1vh solid #fff;
+  background-color: #2f2f2f;
+}
+#signinButton{
+  width: 30%;
+  border: none;
+  background-color: #4C5FD5;
+}
+#submitButton:hover{
+  background-color: #414141;
+}
+#signinButton:hover{
+   background-color: #5f6ed3
+}
+#searchSection{
+  background-color: #dadbf1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  height: 50%;
+}
+#searchSection h1{
+  font-size: 5vw;
+  font-weight: 400;
+  font-family: var(--font);
+}
+#searchInputContainer{
+  position: relative;
+  width: 50%;
+  max-width: 50%;
+  height: 20%;
+  max-height: 20%;
+  border: 0.1vh solid #000;
+  border-radius: 0.5vh;
+}
+#searchInput{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  font-size: 1.5vw;
+  padding-left: 2%;
+  border-radius: 0.5vh;
+}
+#searchArrow{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 3%;
+  max-width: 5%;
+  width: 3%;
+  cursor: pointer;
+}
+#servicesSection{
+  width: 100%;
+  height: 120%;
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+}
+.servicesColumns{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.servicesItems{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  min-height: max-content;
+  height: 30%;
+  font-family: var(--font);
+}
+.servicesItems h1{
+  font-size: 1.3vw;
+  margin-bottom: 1.7vh;
+}
+.servicesItems p{
+  font-size: 1.2vw;
+  margin-bottom: 1.7vh;
+}
+.servicesItems a{
+  font-size: 1.1vw;
+  text-decoration: none;
+  color: #4C5FD5;
+}
+.servicesImages{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-right: 2vw;
+}
+.servicesImages img{
+  width: 8vw;
+}
+#servicesColumn1{
+  align-items: flex-end;
+}
