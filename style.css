@@ -103,11 +103,12 @@ header{
   position: relative;
   width: 50%;
   height: 20%;
+  background-color: #fff;
   border: 0.1vh solid #000;
   border-radius: 0.5vh;
 }
 #searchInput{
-  width: 100%;
+  width: 92%;
   height: 100%;
   display: block;
   outline: none;
