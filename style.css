@@ -12,7 +12,7 @@ body{
 :root{
   --font: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
 }
-#header{
+header{
   height: 12%;
   background-color: #000;
   color: white;
@@ -20,7 +20,7 @@ body{
   justify-content: space-around;
 }
 #logoTextHeader{
-  max-width: 30%;
+  width: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,24 +30,24 @@ body{
   font-family: var(--font);
 }
 #logo{
-  width: 40%;
-  padding: 1%;
-  border-right: 0.1vw solid #fff;
-}
-#logo a{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5%;
+  gap: 7%;
+  width: max-content;
+  padding: 0 5%;
+  border-right: 0.1vw solid #fff;
+}
+#logo a{
+  display: block;
   text-decoration: none;
-  color: white;
   font-weight: bold;
   font-size: 1.5vw;
-  font-family: var(--font);
+  color: #fff;
 }
-#logo a img{
-  border-radius: 1vh;
-  width: 20%;
+#logo img{
+  border-radius: 1.7vh;
+  width: 2.5vw;
 }
 #mainHeaderButtons{
   display: flex;
@@ -102,15 +102,14 @@ body{
 #searchInputContainer{
   position: relative;
   width: 50%;
-  max-width: 50%;
   height: 20%;
-  max-height: 20%;
   border: 0.1vh solid #000;
   border-radius: 0.5vh;
 }
 #searchInput{
   width: 100%;
   height: 100%;
+  display: block;
   outline: none;
   border: none;
   font-size: 1.5vw;
@@ -122,7 +121,6 @@ body{
   top: 50%;
   transform: translateY(-50%);
   right: 3%;
-  max-width: 5%;
   width: 3%;
   cursor: pointer;
 }
@@ -155,9 +153,13 @@ body{
   margin-bottom: 1.7vh;
 }
 .servicesItems a{
+  display: block;
   font-size: 1.1vw;
   text-decoration: none;
   color: #4C5FD5;
+}
+.servicesItems a:hover{
+  text-decoration: underline;
 }
 .servicesImages{
   display: flex;
@@ -171,4 +173,57 @@ body{
 }
 #servicesColumn1{
   align-items: flex-end;
+}
+footer{
+  height: max-content;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  background-color: #000;
+  color: #fff;
+}
+#footerDivs{
+  width: 70%;
+  padding: 0 5% 5% 5%;
+  display: flex;
+  align-items: top;
+  justify-content: space-around;
+}
+.footerDiv{
+  max-width: max-content;
+  max-height: max-content;
+  font-family: var(--font);
+  margin-top: 5%;
+}
+.footerDiv h1{
+  margin-bottom: 10%;
+  font-size: 1.5vw;
+}
+.footerDiv h2{
+  margin-top: 30%;
+  font-size: 1.1vw;
+}
+.footerList{
+  list-style-type: none;
+}
+.listLink{
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2vw;
+}
+.listLink:hover{
+  text-decoration: underline;
+}
+#footerDivCopyright{
+  display: flex;
+  align-items: end;
+  margin-bottom: 5%;
+  width: 30%;
+  font-size: 1.5vw;
+}
+#footerDivCopyright img{
+  width: 3vw;
+  border-radius: 2vh;
+  margin-bottom: 5%;
 }
